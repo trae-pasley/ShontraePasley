@@ -173,7 +173,7 @@ for (var indexer = 0; indexer < blogArray.length; indexer++) {
   var githubUrl = blogArray[indexer].githubUrl;
   bloggy.innerHTML += "<div class='entryDiv'><h2>".concat(blogTitle, "</h2>\n        <h3>").concat(subtitle, "</h3>\n        <strong>finished on ").concat(dateComplete, "</strong>\n        <p>").concat(description, "</p>\n        <hr><div class='entryDetails'><p>Technologies used: ").concat(technologiesUsed, "</p>\n        <p>Project highlights: ").concat(projectHighlights, "</p>\n        <a href='").concat(netlifyUrl, "'><i class=\"fas fa-child\"></i>view project</a><br>\n            <a href='").concat(githubUrl, "'><i class=\"fab fa-github-alt\"></i>view code</a></div> \n        </div>");
 }
-},{}],"../../../AppData/Roaming/npm-cache/_npx/5668/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{}],"../../../AppData/Roaming/npm-cache/_npx/7408/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -201,7 +201,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64830" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65069" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -377,5 +377,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../AppData/Roaming/npm-cache/_npx/5668/node_modules/parcel/src/builtins/hmr-runtime.js","script.js"], null)
+},{}]},{},["../../../AppData/Roaming/npm-cache/_npx/7408/node_modules/parcel/src/builtins/hmr-runtime.js","script.js"], null)
 //# sourceMappingURL=/script.75da7f30.js.map
