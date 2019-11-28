@@ -1,15 +1,25 @@
 import { header, nav, main, footer } from "./components";
 import * as state from "./store";
-// import { about, blog, contact, home } from "./components/views";
+import { about, blog, contact, home } from "./components/mainContent";
 
-function render(state) {
+import Navigo from "Navigo";
+
+function render(state.home) {
         document.querySelector('#root').innerHTML = `
-        ${header(state)}
-        ${nav(state)}    
-        ${main(state)}   
-        ${footer(state)}
+        ${header(st)}
+        ${nav(st)}    
+        ${main(st)}   
+        ${footer(st)}
 `;
+router.updatePageLinks();
 }
+
+router.on(".page", params =>
+ rende(
+     state[
+         `${params.page.slice(0,1).toUpperCase()}${}`
+     ]
+ )
  function handleNavigation(event)
  {
      const component = event.target.textContent;

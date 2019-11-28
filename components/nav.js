@@ -1,9 +1,30 @@
-export default () => `
-<nav>
-<span class='fas fa-bars is-hidden--tablet'></span>
-<nav><ul id='navigation' class="is-hidden--mobile is-shown--tablet">
-                <li><a href="blog/blog.html">Blog</a></li>
-                <li><a href="about/about.html">About</a></li>
-                <li><a href="contact/contact.html">Contact</a></li>
-        </ul></nav>
+import { Links } from "/store";
+
+function linksBuilder(links) {
+        return links.map(link => `<l><a href="./${link}" data-navigo>${link}</a></li>`).join("");
+}
+
+export default () => 
+
+${Footer()}
 `;
+
+router.updatePageLinks();
+
+}
+
+router
+
+.on(":page", params =>
+        render(
+
+         state[
+         `${params.page.slice(0, 1).toUpperCase()}${params.page.
+                slice(1)
+                .toLowerCase()}`
+         ]
+     )
+)
+
+        .on("/", render())
+        .resolve();
