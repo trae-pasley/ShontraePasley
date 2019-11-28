@@ -1,23 +1,26 @@
 {
-    "name": "shontraepasley",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-      "build": "npx parcel build index.html",
-      "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "",
-    "license": "ISC",
-    "devDependencies": {
-      "eslint": "^6.5.1",
-      "eslint-config-prettier": "^6.3.0",
-      "eslint-plugin-prettier": "^3.1.1",
-      "parcel-bundler": "^1.12.4",
-      "prettier": "^1.18.2",
-      "stylelint": "^11.0.0",
-      "stylelint-config-prettier": "^6.0.0",
-      "stylelint-config-standard": "^19.0.0",
-      "stylelint-prettier": "^1.1.1"
-    }
+  "name": "shontraepasley",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^1.18.2",
+    "stylelint": "^11.0.0",
+    "stylelint-config-prettier": "^6.0.0",
+    "stylelint-config-standard": "^19.0.0",
+    "stylelint-prettier": "^1.1.1"
+  },
+  "dependencies": {
+    "navigo": "^7.1.2"
   }
+}

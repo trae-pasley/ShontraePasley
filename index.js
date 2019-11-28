@@ -1,13 +1,16 @@
 import { header, nav, main, footer } from "./components";
 import * as state from "./store";
-// import { about, blog, contact, home } from "./components/views";
+import Navigo from "navigo";
+const router = new Navigo(location.origin);
+
+
 
 function render(state) {
         document.querySelector('#root').innerHTML = `
         ${header(state)}
-        ${nav(state)}    
+        ${nav()}    
         ${main(state)}   
-        ${footer(state)}
+        ${footer()}
 `;
 }
  function handleNavigation(event)

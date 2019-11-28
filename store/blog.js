@@ -1,6 +1,6 @@
     
 export default {
-    title: "Welcome To My Blog"
+    title: "Welcome To My Blog",
     mainContent: Blog 
     
     // const blogArray =  [
@@ -78,4 +78,5 @@ export default {
     //             <a href='${githubUrl}'><i class="fab fa-github-alt"></i>view code</a></div> 
     //         </div>`;
     // }
-
+}
+;
