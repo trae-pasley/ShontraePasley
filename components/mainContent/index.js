@@ -1,4 +1,4 @@
-export { default as about } from "./about";
-export { default as blog } from "./blog";
-export {default as contact } from "./contact";
-export { default as home } from "./home";
+export { default as About } from "./About";
+export { default as Blog } from "./Blog";
+export {default as Contact } from "./Contact";
+export { default as Home } from "./Home";
