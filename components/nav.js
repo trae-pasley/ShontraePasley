@@ -1,30 +1,14 @@
-import { Links } from "/store";
+import { links } from "../store";
 
 function linksBuilder(links) {
-        return links.map(link => `<l><a href="./${link}" data-navigo>${link}</a></li>`).join("");
+  return links.map(link => `<li><a href="./${link}" data-navigo>${link}</a></li>`).join("");
 }
 
-export default () => 
-
-${Footer()}
+export default () =>
+  `<nav>
+    <span class="fas fa-hamburger is-hidden--desktop"></span>
+    <ul class="is-hidden--mobile is-hidden--tablet is-shown--desktop">
+        ${linksBuilder(Links)}
+      </ul>
+    </nav>
 `;
-
-router.updatePageLinks();
-
-}
-
-router
-
-.on(":page", params =>
-        render(
-
-         state[
-         `${params.page.slice(0, 1).toUpperCase()}${params.page.
-                slice(1)
-                .toLowerCase()}`
-         ]
-     )
-)
-
-        .on("/", render())
-        .resolve();
