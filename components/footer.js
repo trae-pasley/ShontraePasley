@@ -1,5 +1,4 @@
 export default () => `
-<footer>Shontrae Pasley 2019</footer>
-
-
-`;
+    <footer>2019 Shontrae Pasley<i class="fas fa-cat"></i>	    
+    </footer>
+`; 	
