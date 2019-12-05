@@ -1,7 +1,7 @@
     
 export default {
     title: "Welcome To My Blog",
-    mainContent: "Blog", 
+    mainContent: "Blog"
 };
     
     // const blogArray =  [

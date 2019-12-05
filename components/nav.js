@@ -7,8 +7,8 @@ function linksBuilder(links) {
 export default () =>
   `<nav>
     <span class="fas fa-hamburger is-hidden--desktop"></span>
-    <ul class="is-hidden--mobile is-hidden--tablet is-shown--desktop">
+    <u>
         ${linksBuilder(Links)}
-      </ul>
+      </u>
     </nav>
 `;

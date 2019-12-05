@@ -1,4 +1,3 @@
-
 export default () => `
 
 <main class="container">
@@ -58,4 +57,4 @@ export default () => `
     <input type="submit" value="Submit">
 </form>
 </main>
-``
+`;

@@ -6,6 +6,7 @@ import { capitalize } from "lodash";
 const router = new Navigo(location.origin);
 
 function render(st = state.Home) {
+  console.log("st", st);
     document.querySelector("#root").innerHTML = `
     ${Header(st)}
     ${Nav()}
@@ -19,7 +20,6 @@ document.querySelector(".fa-hamburger").addEventListener("click", () => {
 });
   router.updatePageLinks();
 }
-
 
 
 router
