@@ -1,4 +1,4 @@
 export default {
-    title: "Content",
-    mainContent: "Content"
+    title: "Contact",
+    mainContent: "Contact"
 };
