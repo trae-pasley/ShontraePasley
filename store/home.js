@@ -1,6 +1,6 @@
 export default {
     title: "Welcome To My Site",
-    mainContent: "Home",
+    mainContent: "Home"
 
 };
 
@@ -32,4 +32,4 @@ export default {
     <a href="http://www.github.com/trae-pasley">my github</a>    
     <a href="http://www.twitter.com/rcmdecor">my twitter</a>
 </div> -->`    
-}
+

@@ -1,6 +1,7 @@
 import * as mainContent from "./mainContent";
-export default () =>`
-    
-<h1>about about</h1>
-`
-;
+export default st =>`
+<main>
+    ${mainContent[st.mainContent](st)}
+</main>
+
+`;

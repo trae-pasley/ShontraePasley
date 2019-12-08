@@ -1,4 +1,4 @@
-import { Links } from "../store";
+import { links } from "../store";
 
 function linksBuilder(links) {
   return links.map(link => `<li><a href="./${link}" data-navigo>${link}</a></li>`).join("");
