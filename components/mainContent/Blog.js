@@ -1,18 +1,17 @@
+export default ( { posts } ) => `
+${generateArticlesHTML(posts)}
+<div id="blogDiv">blogs</div>
+`;
+
 function generateArticlesHTML(posts) {
     return posts
     .map(
-        ({title, body }) => `
+        ({title, subtitle}) => `
         <article>
         <h2>${title}</h2>
-        <p>${body}</p>
+        <p>${subtitle}</p>
         </article>
     `
     )
     .join(" ");
 }
-
-
-export default ( { posts } ) => `
-    ${generateArticlesHTML(posts)}
-`
-;

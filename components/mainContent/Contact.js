@@ -1,6 +1,4 @@
-
 export default () => `
-
 <main class="container">
 <h4>let's get in FORMation!</h4>
 <form name="contact" method="POST" data-netlify="true">
@@ -54,8 +52,7 @@ export default () => `
         </select>
     </div>
 
-
     <input type="submit" value="Submit">
 </form>
 </main>
-`
+`;

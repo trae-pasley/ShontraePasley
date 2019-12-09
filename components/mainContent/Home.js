@@ -1,6 +1,6 @@
-export default (st) =>
+export default () =>
 `
-<h1>${st.title}</h1>
+<h1>HOME</h1>
 
 `;
 

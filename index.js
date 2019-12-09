@@ -11,24 +11,14 @@ function render(st = state.Home) {
     ${Nav()}
     ${Main(st)}
     ${Footer()}
-`;
+`;  
 
-router.updatePageLinks();
+//document.querySelector(".fa-hamburger").addEventListener("click", () => {
+  // hiddenUL.classList.remove("is-hidden--mobile");
+ // document.querySelector("ul").classList.toggle("is-hidden--mobile");
+//});
+  router.updatePageLinks();
 }
-
-router
-  .on(":page", params => render(state[capitalize(params.page)]))
-  .on("/", () => render())
-  .resolve();
-
-  
-// document.querySelector(".fa-hamburger").addEventListener("click", () => {
-//   // hiddenUL.classList.remove("is-hidden--mobile");
-//   document.querySelector("ul").classList.toggle("is-hidden--mobile");
-// });
-//   router.updatePageLinks();
-// }
-
 
 
 router

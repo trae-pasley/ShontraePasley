@@ -17,20 +17,6 @@ body {
   text-align: center;
 }
 
- /* decorative sec
-.hero {
-  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLBBJMugjdW8mbuFiLUqC0xBvC1XIrE3ALn7DPB8Uja5HuCWp0&s)
-  height: 20vh;
-  /* background-size: cover will stretch the image to fit the resolution, 
-  background-size: contain will not crop the image 
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-}*/
-
 /* these style the link on the decorative hero section */
 .btn {
   background-color: var(--accent); 
@@ -51,11 +37,6 @@ img {
   border-radius: 25%;
   box-shadow: none;
 }
-
-/* p {
-  font-family: 'Turret Road', cursive;
-  font-size: 1.2em;
-} */
 
 ul {
   list-style: none;
