@@ -155,41 +155,29 @@ var _default = {
   posts: [{
     title: "student showcase",
     subtitle: "Savvy Coders 2019 Fall Cohort",
-    dateComplete: "",
-    decription: "A Team Project That Detriminates The Personalities Of Our Team Members",
-    technologiesUsed: "",
+    description: "A Team Project That Detriminates The Personalities Of Our Team Members",
     soloContributor: true,
-    projectHighlights: "",
     netlifyUrl: "https://nashville-students-2019.netlify.com/",
     githubUrl: ""
   }, {
     title: "to-do list",
     subtitle: "Our Make On a Web Generated To-Do List",
-    dateComplete: "",
-    decription: "To Do List",
-    technologiesUsed: "",
+    description: "To Do List",
     soloContributor: true,
-    projectHighlights: "",
     netlifyUrl: "",
     githubUrl: ""
   }, {
     title: "fund checker",
     subtitle: "The Budgeting Calculator",
-    dateComplete: "",
-    decription: "",
-    technologiesUsed: "",
+    description: "Checking Funds",
     soloContributor: true,
-    projectHighlights: "",
     netlifyUrl: "",
     githubUrl: ""
   }, {
     title: "clockwork",
     subtitle: "Clocked Out",
-    dateComplete: "October 9th, 2019",
-    decription: "Our Take On A Web Clock",
-    technologiesUsed: "",
+    description: "Our Take On A Web Clock",
     soloContributor: true,
-    projectHighlights: "Features A Round Clock",
     netlifyUrl: "https://dogtiredclock.netlify.com/",
     githubUrl: "https://github.com/trae-pasley/Clockwork3HWK"
   }]
@@ -293,7 +281,7 @@ function linksBuilder(links) {
 }
 
 var _default = function _default() {
-  return "<nav>\n    <span class=\"fas fa-hamburger is-hidden--desktop\"></span>\n    <ul>\n        ".concat(linksBuilder(_store.Links), "\n      </ul>\n    </nav>\n");
+  return "<nav>\n  \n    <ul>\n        ".concat(linksBuilder(_store.Links), "\n      </ul>\n    </nav>\n");
 };
 
 exports.default = _default;
@@ -306,7 +294,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _default = function _default() {
-  return "\n<div class=\"hero\">\n    <a href=\"#\" class=\"btn\">Click me!!!!!</a>\n</div>\n\n<div class=\"section-container\">\n<section>\n    <h2>What About Me?</h2>\n    <p>I am a designer by fate. I like to find the beuaty in all things. With the wave of the future being technology driven, it's my hope that I can marry my design abilties with my new skills in web development.</p>\n    <a href=\"#\" class=\"btn section--btn\">Learn more</a>\n</section>\n<section>\n        <h2>Tech Stack</h2>\n        <p>Currently, I am learning the art of JavaScript, CSS and HTML. Daily, my skill set is improving with ongoing instruction and practice. I am also in daily practice of building my portfolio.</p>\n        <a href=\"#\" class=\"btn section--btn\">View Resume</a>\n</section>\n<section>\n        <h2>Hobbies</h2>\n        <p>I love to draw. If I could have \"dream time\" spent doing whatever I wanted, it would probably be visiting vintage shops and a day at the farmer's market. That day would probably end with a good movie on the sofa. That's something I don't get to go often.</p>\n   \n</section>\n</div>\n<div>\n    <a href=\"http://www.github.com/trae-pasley\">my github</a>    \n    <a href=\"http://www.twitter.com/rcmdecor\">my twitter</a>\n</div>\n";
+  return "\n\n<div class=\"section-container\">\n<section>\n    <h2>What About Me?</h2>\n    <p>I am a designer by fate. I like to find the beuaty in all things. With the wave of the future being technology driven, it's my hope that I can marry my design abilties with my new skills in web development.</p>\n</section>\n\n<section>\n        <h2>Tech Stack</h2>\n        <p>Currently, I am learning the art of JavaScript, CSS and HTML. Daily, my skill set is improving with ongoing instruction and practice. I am also in daily practice of building my portfolio.</p>\n</section>\n\n<section>\n        <h2>Hobbies</h2>\n        <p>I love to draw. If I could have \"dream time\" spent doing whatever I wanted, it would probably be visiting vintage shops and a day at the farmer's market. That day would probably end with a good movie on the sofa. That's something I don't get to go often.</p>\n</section>\n</div>\n<div>\n    <a href=\"http://www.github.com/trae-pasley\">My Github</a>    \n    <a href=\"http://www.twitter.com/rcmdecor\">My Twitter</a>\n</div>\n";
 };
 
 exports.default = _default;
@@ -329,13 +317,10 @@ function generateArticlesHTML(posts) {
   return posts.map(function (_ref2) {
     var title = _ref2.title,
         subtitle = _ref2.subtitle,
-        dateComplete = _ref2.dateComplete,
         description = _ref2.description,
-        technologiesUsed = _ref2.technologiesUsed,
-        projectHighlights = _ref2.projectHighlights,
         netlifyUrl = _ref2.netlifyUrl,
         githubUrl = _ref2.githubUrl;
-    return "<div class='entryDiv'><h2>".concat(title, "</h2>\n        <h3>").concat(subtitle, "</h3>\n        <strong>finished on ").concat(dateComplete, "</strong>\n        <p>").concat(description, "</p>\n        <hr><div class='entryDetails'><p>Technologies used: ").concat(technologiesUsed, "</p>\n        <p>Project highlights: ").concat(projectHighlights, "</p>\n        <a href='").concat(netlifyUrl, "'><i class=\"fas fa-child\"></i>view project</a><br>\n            <a href='").concat(githubUrl, "'><i class=\"fab fa-github-alt\"></i>view code</a></div> \n        </div>");
+    return "<div class='entryDiv'><h2>".concat(title, "</h2>\n        <h3>").concat(subtitle, "</h3>\n        <p>").concat(description, "</p>\n        <a href='").concat(netlifyUrl, "'><i class=\"fas fa-child\"></i>view project</a><br>\n            <a href='").concat(githubUrl, "'><i class=\"fab fa-github-alt\"></i>view code</a></div> \n        </div>");
   }).join(" ");
 }
 },{}],"components/mainContent/Contact.js":[function(require,module,exports) {
@@ -19679,7 +19664,7 @@ router.on(":page", function (params) {
 }).on("/", function () {
   return render();
 }).resolve();
-},{"./components":"components/index.js","./store":"store/index.js","navigo":"node_modules/navigo/lib/navigo.min.js","lodash":"node_modules/lodash/lodash.js"}],"../../../AppData/Roaming/npm-cache/_npx/19652/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./components":"components/index.js","./store":"store/index.js","navigo":"node_modules/navigo/lib/navigo.min.js","lodash":"node_modules/lodash/lodash.js"}],"../../../AppData/Roaming/npm-cache/_npx/13540/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -19707,7 +19692,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50365" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50461" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -19883,5 +19868,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../AppData/Roaming/npm-cache/_npx/19652/node_modules/parcel/src/builtins/hmr-runtime.js","index.js"], null)
+},{}]},{},["../../../AppData/Roaming/npm-cache/_npx/13540/node_modules/parcel/src/builtins/hmr-runtime.js","index.js"], null)
 //# sourceMappingURL=/ShontraePasley.e31bb0bc.js.map

@@ -6,7 +6,7 @@ function linksBuilder(links) {
 
 export default () =>
   `<nav>
-    <span class="fas fa-hamburger is-hidden--desktop"></span>
+  
     <ul>
         ${linksBuilder(Links)}
       </ul>
