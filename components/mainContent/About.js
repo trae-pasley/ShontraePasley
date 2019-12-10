@@ -1,4 +1,4 @@
-import * as mainContent from "./mainContent";
+import * as mainContent from"./mainContent";
 export default st =>`
 <main>
     ${mainContent[st.mainContent](st)}
