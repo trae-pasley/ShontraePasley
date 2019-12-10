@@ -117,7 +117,326 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"components/index.js":[function(require,module,exports) {
+})({"components/Header.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _default = function _default(st) {
+  return "\n    <header>\n            <figure>\n            <img alt=\"RococoMetal\" src=\"https://i.etsystatic.com/iusa/ee15fb/45893727/iusa_400x400.45893727_gmoi.jpg?version=0\">\n            </figure>\n            <h3><strong>".concat(st.title, "</strong></h3>\n    </header>\n");
+};
+
+exports.default = _default;
+},{}],"store/About.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  title: "About Me",
+  mainContent: "About"
+};
+exports.default = _default;
+},{}],"store/Blog.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  title: "Welcome To My Blog",
+  mainContent: "Blog",
+  posts: [{
+    title: "student showcase",
+    subtitle: "Savvy Coders 2019 Fall Cohort",
+    dateComplete: "",
+    decription: "A Team Project That Detriminates The Personalities Of Our Team Members",
+    technologiesUsed: "",
+    soloContributor: true,
+    projectHighlights: "",
+    netlifyUrl: "https://nashville-students-2019.netlify.com/",
+    githubUrl: ""
+  }, {
+    title: "to-do list",
+    subtitle: "Our Make On a Web Generated To-Do List",
+    dateComplete: "",
+    decription: "To Do List",
+    technologiesUsed: "",
+    soloContributor: true,
+    projectHighlights: "",
+    netlifyUrl: "",
+    githubUrl: ""
+  }, {
+    title: "fund checker",
+    subtitle: "The Budgeting Calculator",
+    dateComplete: "",
+    decription: "",
+    technologiesUsed: "",
+    soloContributor: true,
+    projectHighlights: "",
+    netlifyUrl: "",
+    githubUrl: ""
+  }, {
+    title: "clockwork",
+    subtitle: "Clocked Out",
+    dateComplete: "October 9th, 2019",
+    decription: "Our Take On A Web Clock",
+    technologiesUsed: "",
+    soloContributor: true,
+    projectHighlights: "Features A Round Clock",
+    netlifyUrl: "https://dogtiredclock.netlify.com/",
+    githubUrl: "https://github.com/trae-pasley/Clockwork3HWK"
+  }]
+};
+exports.default = _default;
+},{}],"store/Contact.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  title: "Contact",
+  mainContent: "Contact"
+};
+exports.default = _default;
+},{}],"store/Home.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  title: "Welcome To My Site",
+  mainContent: "Home"
+};
+exports.default = _default;
+},{}],"store/Links.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = ["Home", "About", "Contact", "Blog"];
+exports.default = _default;
+},{}],"store/index.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+Object.defineProperty(exports, "About", {
+  enumerable: true,
+  get: function () {
+    return _About.default;
+  }
+});
+Object.defineProperty(exports, "Blog", {
+  enumerable: true,
+  get: function () {
+    return _Blog.default;
+  }
+});
+Object.defineProperty(exports, "Contact", {
+  enumerable: true,
+  get: function () {
+    return _Contact.default;
+  }
+});
+Object.defineProperty(exports, "Home", {
+  enumerable: true,
+  get: function () {
+    return _Home.default;
+  }
+});
+Object.defineProperty(exports, "Links", {
+  enumerable: true,
+  get: function () {
+    return _Links.default;
+  }
+});
+
+var _About = _interopRequireDefault(require("./About"));
+
+var _Blog = _interopRequireDefault(require("./Blog"));
+
+var _Contact = _interopRequireDefault(require("./Contact"));
+
+var _Home = _interopRequireDefault(require("./Home"));
+
+var _Links = _interopRequireDefault(require("./Links"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+},{"./About":"store/About.js","./Blog":"store/Blog.js","./Contact":"store/Contact.js","./Home":"store/Home.js","./Links":"store/Links.js"}],"components/Nav.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _store = require("../store");
+
+function linksBuilder(links) {
+  return links.map(function (link) {
+    return "<li><a href=\"./".concat(link, "\" data-navigo>").concat(link, "</a></li>");
+  }).join("");
+}
+
+var _default = function _default() {
+  return "<nav>\n    <span class=\"fas fa-hamburger is-hidden--desktop\"></span>\n    <ul>\n        ".concat(linksBuilder(_store.Links), "\n      </ul>\n    </nav>\n");
+};
+
+exports.default = _default;
+},{"../store":"store/index.js"}],"components/mainContent/About.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _default = function _default() {
+  return "\n<div class=\"hero\">\n    <a href=\"#\" class=\"btn\">Click me!!!!!</a>\n</div>\n\n<div class=\"section-container\">\n<section>\n    <h2>What About Me?</h2>\n    <p>I am a designer by fate. I like to find the beuaty in all things. With the wave of the future being technology driven, it's my hope that I can marry my design abilties with my new skills in web development.</p>\n    <a href=\"#\" class=\"btn section--btn\">Learn more</a>\n</section>\n<section>\n        <h2>Tech Stack</h2>\n        <p>Currently, I am learning the art of JavaScript, CSS and HTML. Daily, my skill set is improving with ongoing instruction and practice. I am also in daily practice of building my portfolio.</p>\n        <a href=\"#\" class=\"btn section--btn\">View Resume</a>\n</section>\n<section>\n        <h2>Hobbies</h2>\n        <p>I love to draw. If I could have \"dream time\" spent doing whatever I wanted, it would probably be visiting vintage shops and a day at the farmer's market. That day would probably end with a good movie on the sofa. That's something I don't get to go often.</p>\n   \n</section>\n</div>\n<div>\n    <a href=\"http://www.github.com/trae-pasley\">my github</a>    \n    <a href=\"http://www.twitter.com/rcmdecor\">my twitter</a>\n</div>\n";
+};
+
+exports.default = _default;
+},{}],"components/mainContent/Blog.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _default = function _default(_ref) {
+  var posts = _ref.posts;
+  return "\n    ".concat(generateArticlesHTML(posts), "\n");
+};
+
+exports.default = _default;
+
+function generateArticlesHTML(posts) {
+  return posts.map(function (_ref2) {
+    var title = _ref2.title,
+        subtitle = _ref2.subtitle,
+        dateComplete = _ref2.dateComplete,
+        description = _ref2.description,
+        technologiesUsed = _ref2.technologiesUsed,
+        projectHighlights = _ref2.projectHighlights,
+        netlifyUrl = _ref2.netlifyUrl,
+        githubUrl = _ref2.githubUrl;
+    return "<div class='entryDiv'><h2>".concat(title, "</h2>\n        <h3>").concat(subtitle, "</h3>\n        <strong>finished on ").concat(dateComplete, "</strong>\n        <p>").concat(description, "</p>\n        <hr><div class='entryDetails'><p>Technologies used: ").concat(technologiesUsed, "</p>\n        <p>Project highlights: ").concat(projectHighlights, "</p>\n        <a href='").concat(netlifyUrl, "'><i class=\"fas fa-child\"></i>view project</a><br>\n            <a href='").concat(githubUrl, "'><i class=\"fab fa-github-alt\"></i>view code</a></div> \n        </div>");
+  }).join(" ");
+}
+},{}],"components/mainContent/Contact.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _default = function _default() {
+  return "\n\n<main class=\"container\">\n<h4>let's get in FORMation!</h4>\n<form name=\"contact\" method=\"POST\" data-netlify=\"true\">\n    <div>\n        <label for=\"name\">Name:</label>\n        <input type=\"text\" name=\"name\" id=\"name\" placeholder=\"Full Name\">\n    </div>\n    <div>\n        <label for=\"email\">Email:</label>\n        <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"hello@hi.com\">\n    </div>\n    <div>\n        <label for=\"phone\">Phone:</label>\n        <input type=\"tel\" name=\"phone\" id=\"phone\" placeholder=\"666-666-6666\">\n    </div>\n    <div>\n        <label for=\"message\">Enter your message:</label>\n        <textarea name=\"message\" id=\"message\" cols=\"30\" rows=\"10\"></textarea>\n    </div>\n\n    <p>What's this message about?</p>\n\n        <input type=\"radio\" name=\"subject\" value=\"professional\" id=\"pro\" checked>\n        <label for=\"pro\">Let's network!</label>\n    <div>\n        <input type=\"radio\" name=\"subject\" value=\"personal\" id=\"personal\">\n        <label for=\"personal\">Personal compliment</label>\n    </div>\n    <div>\n        <input type=\"radio\" name=\"subject\" value=\"other\">\n        <label>Something else</label>\n    </div>\n    <input type=\"checkbox\" name=\"option\" value=\"trusting\" id=\"news\" checked>\n    <label for=\"news\">Subscribe me to  your newsletter</label>\n\n    <div>\n        <label for=\"marketing\">How did you hear about me?</label>\n        <select name=\"marketing\">\n            <optgroup label=\"Online\">\n                <option value=\"social\">Social Media</option>\n                <option value=\"github\">Github</option>\n                <option value=\"search\">Search Engine</option>\n                <option value=\"email\">Email</option>\n            </optgroup>\n            <optgroup label=\"In-Person\">\n                <option value=\"networking\">We met at a networking event</option>\n                <option value=\"referral\">Personal referral</option>\n                <option value=\"random\">We met somewhere else</option>\n            </optgroup>\n            <option value=\"other\">Other</option>\n        </select>\n    </div>\n\n\n    <input type=\"submit\" value=\"Submit\">\n</form>\n</main>\n";
+};
+
+exports.default = _default;
+},{}],"components/mainContent/Home.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _default = function _default() {
+  return "\n<h1>HOME</h1>\n\n";
+};
+
+exports.default = _default;
+},{}],"components/mainContent/index.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+Object.defineProperty(exports, "About", {
+  enumerable: true,
+  get: function () {
+    return _About.default;
+  }
+});
+Object.defineProperty(exports, "Blog", {
+  enumerable: true,
+  get: function () {
+    return _Blog.default;
+  }
+});
+Object.defineProperty(exports, "Contact", {
+  enumerable: true,
+  get: function () {
+    return _Contact.default;
+  }
+});
+Object.defineProperty(exports, "Home", {
+  enumerable: true,
+  get: function () {
+    return _Home.default;
+  }
+});
+
+var _About = _interopRequireDefault(require("./About"));
+
+var _Blog = _interopRequireDefault(require("./Blog"));
+
+var _Contact = _interopRequireDefault(require("./Contact"));
+
+var _Home = _interopRequireDefault(require("./Home"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+},{"./About":"components/mainContent/About.js","./Blog":"components/mainContent/Blog.js","./Contact":"components/mainContent/Contact.js","./Home":"components/mainContent/Home.js"}],"components/Main.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var mainContent = _interopRequireWildcard(require("./mainContent"));
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+var _default = function _default(st) {
+  return "\n<main>\n".concat(mainContent[st.mainContent](st), "\n</main>\n");
+};
+
+exports.default = _default;
+},{"./mainContent":"components/mainContent/index.js"}],"components/Footer.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _default = function _default() {
+  return "\n    <footer>2019 Shontrae Pasley</footer>\n";
+};
+
+exports.default = _default;
+},{}],"components/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -157,180 +476,7 @@ var _Main = _interopRequireDefault(require("./Main"));
 var _Footer = _interopRequireDefault(require("./Footer"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{}],"store/About.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  title: "About Me",
-  mainContent: "About Me"
-};
-exports.default = _default;
-},{}],"store/Blog.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  title: "Welcome To My Blog",
-  mainContent: "Blog"
-}; // const blogArray =  [
-//     {
-//         title: "student showcase",
-//         subtitle: "Savvy Coders 2019 Fall Cohort",
-//         dateComplete: "",
-//         decription: "A Team Project That Detriminates The Personalities Of Our Team Members",
-//         technoligiesUsed: "",
-//         soloContributor: true,
-//         projectHighlights: "",
-//         netlifyUrl: "https://nashville-students-2019.netlify.com/",
-//         githubUrl: "",
-//     },
-//     {
-//         title: "to-do list",
-//         subtitle: "Our Make On a Web Generated To-Do List",
-//         dateComplete: "",
-//         decription: "To Do List",
-//         technoligiesUsed: "",
-//         soloContributor: true,
-//         projectHighlights: "",
-//         netlifyUrl: "",
-//         githubUrl: "",
-//     },
-//     {
-//         title: "fund checker",
-//         subtitle: "The Budgeting Calculator",
-//         dateComplete:"",
-//         decription: "",
-//         technoligiesUsed: "",
-//         soloContributor: true,
-//         projectHighlights: "",
-//         netlifyUrl: "",
-//         githubUrl: "",
-//     },
-//     {
-//         title: "clockwork",
-//         subtitle: "Clocked Out",
-//         dateComplete:"October 9th, 2019",
-//         decription: "Our Take On A Web Clock",
-//         technoligiesUsed: "",
-//         soloContributor: true,
-//         projectHighlights: "Features A Round Clock",
-//         netlifyUrl: "https://dogtiredclock.netlify.com/",
-//         githubUrl: "https://github.com/trae-pasley/Clockwork3HWK",
-//     }
-//     ]
-// var bloggy = document.getElementById("blogDiv");
-// for(var indexer = 0; indexer < blogArray.length; indexer++)
-// {
-//     var blogTitle = blogArray[indexer].title;
-//     var subtitle = blogArray[indexer].subtitle;
-//     var dateComplete = blogArray[indexer].dateComplete;
-//     var description = blogArray[indexer].description;
-//     var technologiesUsed = blogArray[indexer].technologiesUsed;
-//     var projectHighlights = blogArray[indexer].projectHighlights;
-//     var netlifyUrl = blogArray[indexer].netlifyUrl;
-//     var githubUrl = blogArray[indexer].githubUrl;
-//     bloggy.innerHTML += `<div class='entryDiv'><h2>${blogTitle}</h2>
-//         <h3>${subtitle}</h3>
-//         <strong>finished on ${dateComplete}</strong>
-//         <p>${description}</p>
-//         <hr><div class='entryDetails'><p>Technologies used: ${technologiesUsed}</p>
-//         <p>Project highlights: ${projectHighlights}</p>
-//         <a href='${netlifyUrl}'><i class="fas fa-child"></i>view project</a><br>
-//             <a href='${githubUrl}'><i class="fab fa-github-alt"></i>view code</a></div> 
-//         </div>`;
-// }
-
-exports.default = _default;
-},{}],"store/Contact.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  title: "Content",
-  mainContent: "Content"
-};
-exports.default = _default;
-},{}],"store/Home.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  title: "Welcome To My Site",
-  mainContent: "Home"
-};
-exports.default = _default;
-"\n<div class=\"hero\">\n    <a href=\"#\" class=\"btn\">Click me!!!!!</a>\n</div>\n\n<div class=\"section-container\">\n<section>\n    <h2>What About Me?</h2>\n    <p>I am a designer by fate. I like to find the beuaty in all things. With the wave of the future being technology driven, it's my hope that I can marry my design abilties with my new skills in web development.</p>\n    <a href=\"#\" class=\"btn section--btn\">Learn more</a>\n</section>\n<section>\n        <h2>Tech Stack</h2>\n        <p>Currently, I am learning the art of JavaScript, CSS and HTML. Daily, my skill set is improving with ongoing instruction and practice. I am also in daily practice of building my portfolio.</p>\n        <a href=\"#\" class=\"btn section--btn\">View Resume</a>\n</section>\n<section>\n        <h2>Hobbies</h2>\n        <p>I love to draw. If I could have \"dream time\" spent doing whatever I wanted, it would probably be visiting vintage shops and a day at the farmer's market. That day would probably end with a good movie on the sofa. That's something I don't get to go often.</p>\n    // <a href=\"#\" class=\"btn section--btn\">fill in later</a>//\n</section>\n</div>\n<!-- <div>\n    <a href=\"http://www.github.com/trae-pasley\">my github</a>    \n    <a href=\"http://www.twitter.com/rcmdecor\">my twitter</a>\n</div> -->";
-},{}],"store/Links.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = ["Home", "About", "Contact", "Blog"];
-exports.default = _default;
-},{}],"store/index.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-Object.defineProperty(exports, "about", {
-  enumerable: true,
-  get: function () {
-    return _About.default;
-  }
-});
-Object.defineProperty(exports, "blog", {
-  enumerable: true,
-  get: function () {
-    return _Blog.default;
-  }
-});
-Object.defineProperty(exports, "contact", {
-  enumerable: true,
-  get: function () {
-    return _Contact.default;
-  }
-});
-Object.defineProperty(exports, "home", {
-  enumerable: true,
-  get: function () {
-    return _Home.default;
-  }
-});
-Object.defineProperty(exports, "Links", {
-  enumerable: true,
-  get: function () {
-    return _Links.default;
-  }
-});
-
-var _About = _interopRequireDefault(require("./About"));
-
-var _Blog = _interopRequireDefault(require("./Blog"));
-
-var _Contact = _interopRequireDefault(require("./Contact"));
-
-var _Home = _interopRequireDefault(require("./Home"));
-
-var _Links = _interopRequireDefault(require("./Links"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./About":"store/About.js","./Blog":"store/Blog.js","./Contact":"store/Contact.js","./Home":"store/Home.js","./Links":"store/Links.js"}],"node_modules/navigo/lib/navigo.min.js":[function(require,module,exports) {
+},{"./Header":"components/Header.js","./Nav":"components/Nav.js","./Main":"components/Main.js","./Footer":"components/Footer.js"}],"node_modules/navigo/lib/navigo.min.js":[function(require,module,exports) {
 var define;
 !function(e,t){"object"==typeof exports&&"undefined"!=typeof module?module.exports=t():"function"==typeof define&&define.amd?define(t):e.Navigo=t()}(this,function(){"use strict";var e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function t(){return!("undefined"==typeof window||!window.history||!window.history.pushState)}function n(e,n,o){this.root=null,this._routes=[],this._useHash=n,this._hash=void 0===o?"#":o,this._paused=!1,this._destroyed=!1,this._lastRouteResolved=null,this._notFoundHandler=null,this._defaultHandler=null,this._usePushState=!n&&t(),this._onLocationChange=this._onLocationChange.bind(this),this._genericHooks=null,this._historyAPIUpdateMethod="pushState",e?this.root=n?e.replace(/\/$/,"/"+this._hash):e.replace(/\/$/,""):n&&(this.root=this._cLoc().split(this._hash)[0].replace(/\/$/,"/"+this._hash)),this._listen(),this.updatePageLinks()}function o(e){return e instanceof RegExp?e:e.replace(/\/+$/,"").replace(/^\/+/,"^/")}function i(e){return e.replace(/\/$/,"").split("/").length}function s(e,t){return i(t)-i(e)}function r(e,t){return function(e){return(arguments.length>1&&void 0!==arguments[1]?arguments[1]:[]).map(function(t){var i=function(e){var t=[];return{regexp:e instanceof RegExp?e:new RegExp(e.replace(n.PARAMETER_REGEXP,function(e,o,i){return t.push(i),n.REPLACE_VARIABLE_REGEXP}).replace(n.WILDCARD_REGEXP,n.REPLACE_WILDCARD)+n.FOLLOWED_BY_SLASH_REGEXP,n.MATCH_REGEXP_FLAGS),paramNames:t}}(o(t.route)),s=i.regexp,r=i.paramNames,a=e.replace(/^\/+/,"/").match(s),h=function(e,t){return 0===t.length?null:e?e.slice(1,e.length).reduce(function(e,n,o){return null===e&&(e={}),e[t[o]]=decodeURIComponent(n),e},null):null}(a,r);return!!a&&{match:a,route:t,params:h}}).filter(function(e){return e})}(e,t)[0]||!1}function a(e,t){var n=t.map(function(t){return""===t.route||"*"===t.route?e:e.split(new RegExp(t.route+"($|/)"))[0]}),i=o(e);return n.length>1?n.reduce(function(e,t){return e.length>t.length&&(e=t),e},n[0]):1===n.length?n[0]:i}function h(e,n,o){var i,s=function(e){return e.split(/\?(.*)?$/)[0]};return void 0===o&&(o="#"),t()&&!n?s(e).split(o)[0]:(i=e.split(o)).length>1?s(i[1]):s(i[0])}function u(t,n,o){if(n&&"object"===(void 0===n?"undefined":e(n))){if(n.before)return void n.before(function(){(!(arguments.length>0&&void 0!==arguments[0])||arguments[0])&&(t(),n.after&&n.after(o))},o);if(n.after)return t(),void(n.after&&n.after(o))}t()}return n.prototype={helpers:{match:r,root:a,clean:o,getOnlyURL:h},navigate:function(e,t){var n;return e=e||"",this._usePushState?(n=(n=(t?"":this._getRoot()+"/")+e.replace(/^\/+/,"/")).replace(/([^:])(\/{2,})/g,"$1/"),history[this._historyAPIUpdateMethod]({},"",n),this.resolve()):"undefined"!=typeof window&&(e=e.replace(new RegExp("^"+this._hash),""),window.location.href=window.location.href.replace(/#$/,"").replace(new RegExp(this._hash+".*$"),"")+this._hash+e),this},on:function(){for(var t=this,n=arguments.length,o=Array(n),i=0;i<n;i++)o[i]=arguments[i];if("function"==typeof o[0])this._defaultHandler={handler:o[0],hooks:o[1]};else if(o.length>=2)if("/"===o[0]){var r=o[1];"object"===e(o[1])&&(r=o[1].uses),this._defaultHandler={handler:r,hooks:o[2]}}else this._add(o[0],o[1],o[2]);else"object"===e(o[0])&&Object.keys(o[0]).sort(s).forEach(function(e){t.on(e,o[0][e])});return this},off:function(e){return null!==this._defaultHandler&&e===this._defaultHandler.handler?this._defaultHandler=null:null!==this._notFoundHandler&&e===this._notFoundHandler.handler&&(this._notFoundHandler=null),this._routes=this._routes.reduce(function(t,n){return n.handler!==e&&t.push(n),t},[]),this},notFound:function(e,t){return this._notFoundHandler={handler:e,hooks:t},this},resolve:function(e){var n,o,i=this,s=(e||this._cLoc()).replace(this._getRoot(),"");this._useHash&&(s=s.replace(new RegExp("^/"+this._hash),"/"));var a=function(e){return e.split(/\?(.*)?$/).slice(1).join("")}(e||this._cLoc()),l=h(s,this._useHash,this._hash);return!this._paused&&(this._lastRouteResolved&&l===this._lastRouteResolved.url&&a===this._lastRouteResolved.query?(this._lastRouteResolved.hooks&&this._lastRouteResolved.hooks.already&&this._lastRouteResolved.hooks.already(this._lastRouteResolved.params),!1):(o=r(l,this._routes))?(this._callLeave(),this._lastRouteResolved={url:l,query:a,hooks:o.route.hooks,params:o.params,name:o.route.name},n=o.route.handler,u(function(){u(function(){o.route.route instanceof RegExp?n.apply(void 0,o.match.slice(1,o.match.length)):n(o.params,a)},o.route.hooks,o.params,i._genericHooks)},this._genericHooks,o.params),o):this._defaultHandler&&(""===l||"/"===l||l===this._hash||function(e,n,o){if(t()&&!n)return!1;if(!e.match(o))return!1;var i=e.split(o);return i.length<2||""===i[1]}(l,this._useHash,this._hash))?(u(function(){u(function(){i._callLeave(),i._lastRouteResolved={url:l,query:a,hooks:i._defaultHandler.hooks},i._defaultHandler.handler(a)},i._defaultHandler.hooks)},this._genericHooks),!0):(this._notFoundHandler&&u(function(){u(function(){i._callLeave(),i._lastRouteResolved={url:l,query:a,hooks:i._notFoundHandler.hooks},i._notFoundHandler.handler(a)},i._notFoundHandler.hooks)},this._genericHooks),!1))},destroy:function(){this._routes=[],this._destroyed=!0,this._lastRouteResolved=null,this._genericHooks=null,clearTimeout(this._listeningInterval),"undefined"!=typeof window&&(window.removeEventListener("popstate",this._onLocationChange),window.removeEventListener("hashchange",this._onLocationChange))},updatePageLinks:function(){var e=this;"undefined"!=typeof document&&this._findLinks().forEach(function(t){t.hasListenerAttached||(t.addEventListener("click",function(n){if((n.ctrlKey||n.metaKey)&&"a"==n.target.tagName.toLowerCase())return!1;var o=e.getLinkPath(t);e._destroyed||(n.preventDefault(),e.navigate(o.replace(/\/+$/,"").replace(/^\/+/,"/")))}),t.hasListenerAttached=!0)})},generate:function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},n=this._routes.reduce(function(n,o){var i;if(o.name===e)for(i in n=o.route,t)n=n.toString().replace(":"+i,t[i]);return n},"");return this._useHash?this._hash+n:n},link:function(e){return this._getRoot()+e},pause:function(){var e=!(arguments.length>0&&void 0!==arguments[0])||arguments[0];this._paused=e,this._historyAPIUpdateMethod=e?"replaceState":"pushState"},resume:function(){this.pause(!1)},historyAPIUpdateMethod:function(e){return void 0===e?this._historyAPIUpdateMethod:(this._historyAPIUpdateMethod=e,e)},disableIfAPINotAvailable:function(){t()||this.destroy()},lastRouteResolved:function(){return this._lastRouteResolved},getLinkPath:function(e){return e.getAttribute("href")},hooks:function(e){this._genericHooks=e},_add:function(t){var n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:null,o=arguments.length>2&&void 0!==arguments[2]?arguments[2]:null;return"string"==typeof t&&(t=encodeURI(t)),this._routes.push("object"===(void 0===n?"undefined":e(n))?{route:t,handler:n.uses,name:n.as,hooks:o||n.hooks}:{route:t,handler:n,hooks:o}),this._add},_getRoot:function(){return null!==this.root?this.root:(this.root=a(this._cLoc().split("?")[0],this._routes),this.root)},_listen:function(){var e=this;if(this._usePushState)window.addEventListener("popstate",this._onLocationChange);else if("undefined"!=typeof window&&"onhashchange"in window)window.addEventListener("hashchange",this._onLocationChange);else{var t=this._cLoc(),n=void 0,o=void 0;(o=function(){n=e._cLoc(),t!==n&&(t=n,e.resolve()),e._listeningInterval=setTimeout(o,200)})()}},_cLoc:function(){return"undefined"!=typeof window?void 0!==window.__NAVIGO_WINDOW_LOCATION_MOCK__?window.__NAVIGO_WINDOW_LOCATION_MOCK__:o(window.location.href):""},_findLinks:function(){return[].slice.call(document.querySelectorAll("[data-navigo]"))},_onLocationChange:function(){this.resolve()},_callLeave:function(){var e=this._lastRouteResolved;e&&e.hooks&&e.hooks.leave&&e.hooks.leave(e.params)}},n.PARAMETER_REGEXP=/([:*])(\w+)/g,n.WILDCARD_REGEXP=/\*/g,n.REPLACE_VARIABLE_REGEXP="([^/]+)",n.REPLACE_WILDCARD="(?:.*)",n.FOLLOWED_BY_SLASH_REGEXP="(?:/$|$)",n.MATCH_REGEXP_FLAGS="",n});
 
@@ -19533,7 +19679,7 @@ router.on(":page", function (params) {
 }).on("/", function () {
   return render();
 }).resolve();
-},{"./components":"components/index.js","./store":"store/index.js","navigo":"node_modules/navigo/lib/navigo.min.js","lodash":"node_modules/lodash/lodash.js"}],"../../../AppData/Roaming/npm-cache/_npx/14156/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./components":"components/index.js","./store":"store/index.js","navigo":"node_modules/navigo/lib/navigo.min.js","lodash":"node_modules/lodash/lodash.js"}],"../../../AppData/Roaming/npm-cache/_npx/19652/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -19561,7 +19707,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53428" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50365" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -19737,5 +19883,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../AppData/Roaming/npm-cache/_npx/14156/node_modules/parcel/src/builtins/hmr-runtime.js","index.js"], null)
+},{}]},{},["../../../AppData/Roaming/npm-cache/_npx/19652/node_modules/parcel/src/builtins/hmr-runtime.js","index.js"], null)
 //# sourceMappingURL=/ShontraePasley.e31bb0bc.js.map
