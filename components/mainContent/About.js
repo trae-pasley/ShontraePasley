@@ -4,7 +4,7 @@ export default () =>
 <div class="section-container">
 <section>
     <h2>What About Me?</h2>
-    <p>I am a designer by fate. I like to find the beuaty in all things. With the wave of the future being technology driven, it's my hope that I can marry my design abilties with my new skills in web development.</p>
+    <p>I am a designer by fate. I like to find the beauty in all things. With the wave of the future being technology driven, it's my hope that I can marry my design abilties with my new skills in web development.</p>
 </section>
 
 <section>

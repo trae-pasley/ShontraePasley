@@ -1,10 +1,10 @@
     
 export default {
-    title: "Welcome To My Blog",
+    title: "Trae's Sneak Peak",
     mainContent: "Blog",
     posts: [
         {
-            title: "student showcase",
+            title: "Student Showcase",
             subtitle: "Savvy Coders 2019 Fall Cohort",
             description: "A Team Project That Detriminates The Personalities Of Our Team Members",
             soloContributor: true,

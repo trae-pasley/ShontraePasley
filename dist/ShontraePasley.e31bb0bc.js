@@ -150,10 +150,10 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var _default = {
-  title: "Welcome To My Blog",
+  title: "Trae's Sneak Peak",
   mainContent: "Blog",
   posts: [{
-    title: "student showcase",
+    title: "Student Showcase",
     subtitle: "Savvy Coders 2019 Fall Cohort",
     description: "A Team Project That Detriminates The Personalities Of Our Team Members",
     soloContributor: true,
@@ -294,7 +294,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _default = function _default() {
-  return "\n\n<div class=\"section-container\">\n<section>\n    <h2>What About Me?</h2>\n    <p>I am a designer by fate. I like to find the beuaty in all things. With the wave of the future being technology driven, it's my hope that I can marry my design abilties with my new skills in web development.</p>\n</section>\n\n<section>\n        <h2>Tech Stack</h2>\n        <p>Currently, I am learning the art of JavaScript, CSS and HTML. Daily, my skill set is improving with ongoing instruction and practice. I am also in daily practice of building my portfolio.</p>\n</section>\n\n<section>\n        <h2>Hobbies</h2>\n        <p>I love to draw. If I could have \"dream time\" spent doing whatever I wanted, it would probably be visiting vintage shops and a day at the farmer's market. That day would probably end with a good movie on the sofa. That's something I don't get to go often.</p>\n</section>\n</div>\n<div>\n    <a href=\"http://www.github.com/trae-pasley\">My Github</a>    \n    <a href=\"http://www.twitter.com/rcmdecor\">My Twitter</a>\n</div>\n";
+  return "\n\n<div class=\"section-container\">\n<section>\n    <h2>What About Me?</h2>\n    <p>I am a designer by fate. I like to find the beauty in all things. With the wave of the future being technology driven, it's my hope that I can marry my design abilties with my new skills in web development.</p>\n</section>\n\n<section>\n        <h2>Tech Stack</h2>\n        <p>Currently, I am learning the art of JavaScript, CSS and HTML. Daily, my skill set is improving with ongoing instruction and practice. I am also in daily practice of building my portfolio.</p>\n</section>\n\n<section>\n        <h2>Hobbies</h2>\n        <p>I love to draw. If I could have \"dream time\" spent doing whatever I wanted, it would probably be visiting vintage shops and a day at the farmer's market. That day would probably end with a good movie on the sofa. That's something I don't get to go often.</p>\n</section>\n</div>\n<div>\n    <a href=\"http://www.github.com/trae-pasley\">My Github</a>    \n    <a href=\"http://www.twitter.com/rcmdecor\">My Twitter</a>\n</div>\n";
 };
 
 exports.default = _default;
@@ -19664,7 +19664,7 @@ router.on(":page", function (params) {
 }).on("/", function () {
   return render();
 }).resolve();
-},{"./components":"components/index.js","./store":"store/index.js","navigo":"node_modules/navigo/lib/navigo.min.js","lodash":"node_modules/lodash/lodash.js"}],"../../../AppData/Roaming/npm-cache/_npx/13540/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./components":"components/index.js","./store":"store/index.js","navigo":"node_modules/navigo/lib/navigo.min.js","lodash":"node_modules/lodash/lodash.js"}],"../../../AppData/Roaming/npm-cache/_npx/15552/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -19692,7 +19692,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50461" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64963" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -19868,5 +19868,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../AppData/Roaming/npm-cache/_npx/13540/node_modules/parcel/src/builtins/hmr-runtime.js","index.js"], null)
+},{}]},{},["../../../AppData/Roaming/npm-cache/_npx/15552/node_modules/parcel/src/builtins/hmr-runtime.js","index.js"], null)
 //# sourceMappingURL=/ShontraePasley.e31bb0bc.js.map

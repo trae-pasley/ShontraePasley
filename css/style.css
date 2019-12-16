@@ -7,9 +7,9 @@
 }
 
 body {
-  background-color: #0dd348;
+  background-color: #d3c60d;
   font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -17,7 +17,7 @@ body {
   text-align: center;
 }
 
- /* decorative sec
+ decorative sec
 .hero {
   background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLBBJMugjdW8mbuFiLUqC0xBvC1XIrE3ALn7DPB8Uja5HuCWp0&s)
   height: 20vh;
@@ -29,15 +29,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; 
-}*/
-
-/* these style the link on the decorative hero section */
-.btn {
-  background-color: var(--accent); 
+}
+kground-color: var(--accent); 
   text-decoration: none;
   padding: 0.5rem;
   color: var(--neutral);
   border-radius: 10%;
+these style the link on the decorative hero section
+.btn {
+  bac
 }
 
 h3 {
@@ -52,10 +52,10 @@ img {
   box-shadow: none;
 }
 
-/* p {
+p {
   font-family: 'Turret Road', cursive;
   font-size: 1.2em;
-} */
+}
 
 ul {
   list-style: none;
@@ -106,7 +106,6 @@ footer {
   font-size: 8px;
 }
 
-/* hide nav links, class will be removed later with JS */
 .is-hidden--mobile {
   font-size: 0;
   height: 0;
